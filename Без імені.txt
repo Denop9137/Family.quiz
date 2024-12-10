@@ -1,0 +1,43 @@
+
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Тест на тему Сім'я</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Тест на тему "Сім'я"</h1>
+        <p>Перевірте свої знання про свою родину!</p>
+
+        <form id="quizForm">
+            <div class="question">
+                <label for="q1">1. Хто є головою вашої родини?</label>
+                <select id="q1">
+                    <option value="0">Оберіть відповідь</option>
+                    <option value="1">Батько</option>
+                    <option value="2">Мати</option>
+                    <option value="3">Діти</option>
+                </select>
+            </div>
+
+            <div class="question">
+                <label for="q2">2. Скільки у вас братів і сестер?</label>
+                <input type="number" id="q2" min="0">
+            </div>
+
+            <div class="question">
+                <label for="q3">3. Яка ваша улюблена традиція у родині?</label>
+                <input type="text" id="q3">
+            </div>
+
+            <button type="button" onclick="submitQuiz()">Перевірити результат</button>
+        </form>
+
+        <div id="result" class="result"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
